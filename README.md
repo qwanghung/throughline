@@ -44,3 +44,7 @@ Tip: paste your existing doc or link in step 1, and it fills in most of the plan
 - [Humanizer](https://github.com/blader/humanizer) by blader: the English pattern list (MIT)
 - Wojtek Dziedzic, "Pitch perfect: how to present ideas and cut through the noise" (Config 2025): through line, hooks, three-beat structures
 - "The #1 Habit for Clearer Speaking (Value-Per-Minute)": value per minute, point → proof → push
+
+## License
+
+MIT. See [LICENSE](LICENSE).
