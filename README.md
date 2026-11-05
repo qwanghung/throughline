@@ -1,4 +1,4 @@
-# pitch-perfect
+# throughline
 
 A Claude skill that helps designers explain their work so people get it, believe it and care about it. It plans with you first, and only writes once you approve the plan. Works in English and Vietnamese.
 
@@ -7,7 +7,7 @@ A Claude skill that helps designers explain their work so people get it, believe
 **Claude Code**
 
 ```bash
-git clone https://github.com/qwanghung/pitch-perfect.git ~/.claude/skills/pitch-perfect
+git clone https://github.com/qwanghung/throughline.git ~/.claude/skills/throughline
 ```
 
 Start a new session.
@@ -16,7 +16,7 @@ Start a new session.
 
 ## Use
 
-1. Type `/pitch-perfect`, or just say "help me pitch this design".
+1. Type `/throughline`, or just say "help me pitch this design".
 2. **Say who it's for.** "My client's Head of Ops." "Designers who care about craft."
 3. **Say the one thing they must believe or do.** One sentence.
 4. **Answer its questions** in your own words. Real moments and real numbers work best. It never makes them up.
@@ -27,9 +27,9 @@ Tip: paste your existing doc or link in step 1, and it fills in most of the plan
 
 ## Other commands
 
-- `/pitch-perfect review <file>`: tells you what's weak, without changing anything
-- `/pitch-perfect tighten <file>`: cuts the fluff, keeps the meaning
-- `/pitch-perfect adapt <file> vi` (or `en`): rewrites it in the other language
+- `/throughline review <file>`: tells you what's weak, without changing anything
+- `/throughline tighten <file>`: cuts the fluff, keeps the meaning
+- `/throughline adapt <file> vi` (or `en`): rewrites it in the other language
 
 ## What's inside
 

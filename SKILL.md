@@ -1,9 +1,9 @@
 ---
-name: pitch-perfect
-description: Guide a designer from "who am I convincing, and of what?" to a finished pitch, design rationale, or showcase piece such as a design-language doc. First it pins down the audience and the one thing they must believe. Then it finds the questions that will decide the outcome, plans an outline that answers them, and only then writes, cutting everything the audience already knows. English and Vietnamese. Use for "help me pitch this design", "write my design rationale", "prepare a design presentation", "review my pitch", "make this denser", "viết rationale", "chuẩn bị thuyết trình thiết kế", or /pitch-perfect.
+name: throughline
+description: Guide a designer from "who am I convincing, and of what?" to a finished pitch, design rationale, or showcase piece such as a design-language doc. First it pins down the audience and the one thing they must believe. Then it finds the questions that will decide the outcome, plans an outline that answers them, and only then writes, cutting everything the audience already knows. English and Vietnamese. Use for "help me pitch this design", "write my design rationale", "prepare a design presentation", "review my pitch", "make this denser", "viết rationale", "chuẩn bị thuyết trình thiết kế", or /throughline.
 ---
 
-# Pitch perfect
+# Throughline
 
 The goal: a person who owns a decision finishes the pitch convinced the problem is real, convinced this solution beats the alternatives, clear on what you are asking them to decide, and caring about the people it helps.
 
@@ -107,7 +107,7 @@ On request:
 
 - **The designer brings notes, a doc or a Figma link**: prefill phases 1–3 from it, show what you filled in, and ask only for the gaps. Never skip the audience card or the question list. Their confirmation is the point.
 - **Rewrite in place**: when the input is an existing doc or page that should stay where it is, read all of it first. Keep its structure, live examples, code and links unless the plan says otherwise. Audit the story and the density, change only the prose, check every number you keep against the source, then save or republish to the same place. Report what moved, what was cut and what stayed.
-- **`/pitch-perfect review <file>`**, **`tighten <file>`**, **`adapt <file> en|vi`**: run these directly, without the phases. If there's no audience card, ask the two questions that matter most (who decides, and what they must believe) before reviewing.
+- **`/throughline review <file>`**, **`tighten <file>`**, **`adapt <file> en|vi`**: run these directly, without the phases. If there's no audience card, ask the two questions that matter most (who decides, and what they must believe) before reviewing.
 
 ## Gates
 
