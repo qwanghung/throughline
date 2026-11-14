@@ -1,6 +1,6 @@
 ---
 name: throughline
-description: Guide a designer from "who am I convincing, and of what?" to a finished pitch, design rationale, or showcase piece such as a design-language doc. First it pins down the audience and the one thing they must believe. Then it finds the questions that will decide the outcome, plans an outline that answers them, and only then writes, cutting everything the audience already knows. English and Vietnamese. Use for "help me pitch this design", "write my design rationale", "prepare a design presentation", "review my pitch", "make this denser", "write me a catchy hook", "give me an opening line", "viết rationale", "chuẩn bị thuyết trình thiết kế", "viết câu mở đầu", or /throughline.
+description: Guide a designer from "who am I convincing, and of what?" to a finished pitch, design rationale, or showcase piece such as a design-language doc. First it pins down the audience and the one thing they must believe. Then it finds the questions that will decide the outcome, plans an outline that answers them, and only then writes, cutting everything the audience already knows. English and Vietnamese. Use for "help me pitch this design", "write my design rationale", "prepare a design presentation", "review my pitch", "make this denser", "write me a catchy hook", "give me an opening line", "fix orphaned words", "sửa từ mồ côi", "viết rationale", "chuẩn bị thuyết trình thiết kế", "viết câu mở đầu", or /throughline.
 ---
 
 # Throughline
@@ -93,7 +93,8 @@ Exit: the top 3 questions are answered or explicitly accepted as gaps, the gates
 2. Draft in the order **hook → point (by the second sentence) → proof → push**, following the approved outline. Each section answers its question and nothing else.
 3. Density pass: `references/density.md`.
 4. Pattern pass: `references/patterns-en.md` or `references/patterns-vi.md`. Then check that every claim from the outline survived and nothing was added.
-5. Save to `pitch.md`, or the file the designer named.
+5. Orphan pass: `references/orphans.md`. Rewrite titles and headings that would strand a word. If the output is HTML or slides, render it, run `scripts/find-orphans.js` and fix every orphan it finds.
+6. Save to `pitch.md`, or the file the designer named.
 
 ### Phase 5: Refine
 
@@ -101,14 +102,16 @@ On request:
 - `review`: score against the checklist without editing.
 - `tighten`: density and pattern passes only.
 - `adapt en|vi`: a native rewrite in the other language.
+- `orphans`: find and fix every orphaned word (`references/orphans.md`).
 - `hook`: a fresh round of hooks (`references/hooks.md`), steered by the designer's last reactions.
 - `rehearse`: for spoken pitches. Time it at about 130 words per minute, mark the sentences that are hard to say aloud, and cut to the budget.
 
 ## Shortcuts
 
 - **The designer brings notes, a doc or a Figma link**: prefill phases 1–3 from it, show what you filled in, and ask only for the gaps. Never skip the audience card or the question list. Their confirmation is the point.
-- **Rewrite in place**: when the input is an existing doc or page that should stay where it is, read all of it first. Keep its structure, live examples, code and links unless the plan says otherwise. Audit the story and the density, change only the prose, check every number you keep against the source, then save or republish to the same place. Report what moved, what was cut and what stayed.
+- **Rewrite in place**: when the input is an existing doc or page that should stay where it is, read all of it first. Keep its structure, live examples, code and links unless the plan says otherwise. Audit the story and the density, change only the prose, check every number you keep against the source, fix orphans (`references/orphans.md`), then save or republish to the same place. Report what moved, what was cut and what stayed.
 - **`/throughline hook <topic or file>`**: hooks only, without the full flow. Get the audience from the card, the file, or the designer. If you don't know their world (industry, what they care about, what they're tired of hearing), ask up to three questions first. Then follow `references/hooks.md`: one-line hooks (for slide or doc titles) and three-beat openings, scored, with bridges, then a round of picks and vetoes. Use creator-style phrasing only if the designer asks. Use a pop-culture reference only if the designer approves it and explains it or links it.
+- **`/throughline orphans <file or url>`**: find and fix every word left alone on the last line, in English or Vietnamese. Render the piece at the widths that matter, run `scripts/find-orphans.js`, then fix in order: rewrite, glue with a non-breaking space, then CSS `text-wrap`. Re-check until none are left, and report each fix (`references/orphans.md`).
 - **`/throughline review <file>`**, **`tighten <file>`**, **`adapt <file> en|vi`**: run these directly, without the phases. If there's no audience card, ask the two questions that matter most (who decides, and what they must believe) before reviewing.
 
 ## Gates

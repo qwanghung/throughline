@@ -28,6 +28,7 @@ Tip: paste your existing doc or link in step 1, and it fills in most of the plan
 ## Other commands
 
 - `/throughline hook <topic>`: just the opening. One-line hooks for your slide or doc title, plus three-beat openings, made for your audience, in the spirit of an elevator pitch or a TED-style talk
+- `/throughline orphans <file or url>`: finds and fixes every word left alone on the last line, in English or Vietnamese
 - `/throughline review <file>`: tells you what's weak, without changing anything
 - `/throughline tighten <file>`: cuts the fluff, keeps the meaning
 - `/throughline adapt <file> vi` (or `en`): rewrites it in the other language
@@ -35,7 +36,8 @@ Tip: paste your existing doc or link in step 1, and it fills in most of the plan
 ## What's inside
 
 - `SKILL.md`: the workflow: audience → conviction → plan → write → refine
-- `references/`: audience card, the six-step outline, hook writing (`hooks.md`), questions that move the needle, value-per-minute rules for cutting, rationale tables, English and Vietnamese writing patterns, formats
+- `references/`: audience card, the six-step outline, hook writing (`hooks.md`), questions that move the needle, value-per-minute rules for cutting, rationale tables, English and Vietnamese writing patterns, orphan fixing (`orphans.md`), formats
+- `scripts/find-orphans.js`: paste into a browser console to list orphaned words on any rendered page
 - `examples/`: a decision pitch (refund flow, in English and Vietnamese) and a real showcase dry run (`04-dry-run-glass-and-light.md`)
 - `INPUTS-NEEDED.md`: what's still to add (real stakeholder profiles, Vietnamese wording to check, real before/after examples)
 
