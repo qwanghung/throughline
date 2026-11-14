@@ -45,6 +45,12 @@ Don't glue inside code, URLs, file names or anything a reader might copy.
   2. List every orphan with its element and its last line.
   3. Fix each one using the order above: rewrite, glue, then CSS.
   4. Re-render and re-check until none are left at any width.
+
+  When checking a rendered page:
+  - **Confirm the viewport width first.** A hidden or zero-width preview wraps every word onto its own line and reports false orphans everywhere.
+  - **Open folded content** (`<details>`, accordions, tabs) before checking. Hidden text isn't measured.
+  - **Check again with `text-wrap` turned off** (add `* { text-wrap: wrap !important }`), because Safari and older browsers may ignore `pretty` and `balance`. What's left is what glue has to fix.
+  - **Glue every block, not only the broken ones.** Orphans move as the width changes, so a block that's fine at 1280 px can break at 414 px. On a page you control, joining the last two words of every multi-line paragraph, caption, description and heading fixes all widths at once.
 - **Rewrite in place:** change only the words, the non-breaking spaces and, for HTML, the two CSS rules. Report each fix: what was stranded, what changed.
 
 Report like this:
