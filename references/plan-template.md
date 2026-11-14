@@ -63,6 +63,8 @@ Each section answers one question and uses one three-beat structure (PSB, SIA, P
 
 ## Taste notes (learned from reactions)
 - e.g. "Literal lines read as AI-generic; prefer whimsical, sensory."
+- e.g. "Picks three-beat openings over one-liners; lead with those."
+- Approved pop-culture references, each with its meaning or link: …
 
 ## Decisions log
 - <date>: chose X over Y because …

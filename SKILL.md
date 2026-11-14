@@ -1,6 +1,6 @@
 ---
 name: throughline
-description: Guide a designer from "who am I convincing, and of what?" to a finished pitch, design rationale, or showcase piece such as a design-language doc. First it pins down the audience and the one thing they must believe. Then it finds the questions that will decide the outcome, plans an outline that answers them, and only then writes, cutting everything the audience already knows. English and Vietnamese. Use for "help me pitch this design", "write my design rationale", "prepare a design presentation", "review my pitch", "make this denser", "viết rationale", "chuẩn bị thuyết trình thiết kế", or /throughline.
+description: Guide a designer from "who am I convincing, and of what?" to a finished pitch, design rationale, or showcase piece such as a design-language doc. First it pins down the audience and the one thing they must believe. Then it finds the questions that will decide the outcome, plans an outline that answers them, and only then writes, cutting everything the audience already knows. English and Vietnamese. Use for "help me pitch this design", "write my design rationale", "prepare a design presentation", "review my pitch", "make this denser", "write me a catchy hook", "give me an opening line", "viết rationale", "chuẩn bị thuyết trình thiết kế", "viết câu mở đầu", or /throughline.
 ---
 
 # Throughline
@@ -28,7 +28,7 @@ Settle which kind it is in phase 1. It changes the ask, the gates and how defens
 | 2. Conviction | The one thing they need to land | Conviction statement, through line, ranked questions | The designer confirms the question list |
 | 3. Plan | Answers to the questions | Answers, hook candidates, outline, gate check | The top 3 questions are answered or named as gaps, and the designer approves the outline |
 | 4. Write | Approval | The pitch, the problem × feature map, open items | Delivered |
-| 5. Refine (optional) | Feedback | Review, tighten, adapt, rehearse | The designer is done |
+| 5. Refine (optional) | Feedback | Hook, review, tighten, adapt, rehearse | The designer is done |
 
 Keep the plan in `pitch-plan.md` (`references/plan-template.md`) and update it after every exchange. If `pitch-plan.md` already exists, read it and resume at the first phase that isn't finished.
 
@@ -79,7 +79,7 @@ Work through the questions from the top, one or two at a time (`questions.md` §
 - Never answer for the designer. You may suggest a hypothesis labelled "Hypothesis — confirm?".
 
 As answers come in, build the plan:
-- **Hook candidates**: 2–3 options (`spine.md` § Opening). Each must pass the universality test.
+- **Hook candidates**: follow `references/hooks.md`. By default, give one-line hooks for the title and three-beat openings for the first lines or slides, drafted across opening types, scored, each with its bridge. Close or hold the loop according to the format.
 - **Analogy map**: if the principle comes from something real (an object, a moment), map it part by part to the design decisions (`spine.md` §3).
 - **Outline**: one section per question, each with a three-beat structure (PSB, SIA, PPP, or Image → Rule → Build for design-language docs), a one-sentence key point and its evidence.
 - **Options and map**: the rejected alternatives and the problem × feature table (`rationale.md`).
@@ -101,12 +101,14 @@ On request:
 - `review`: score against the checklist without editing.
 - `tighten`: density and pattern passes only.
 - `adapt en|vi`: a native rewrite in the other language.
+- `hook`: a fresh round of hooks (`references/hooks.md`), steered by the designer's last reactions.
 - `rehearse`: for spoken pitches. Time it at about 130 words per minute, mark the sentences that are hard to say aloud, and cut to the budget.
 
 ## Shortcuts
 
 - **The designer brings notes, a doc or a Figma link**: prefill phases 1–3 from it, show what you filled in, and ask only for the gaps. Never skip the audience card or the question list. Their confirmation is the point.
 - **Rewrite in place**: when the input is an existing doc or page that should stay where it is, read all of it first. Keep its structure, live examples, code and links unless the plan says otherwise. Audit the story and the density, change only the prose, check every number you keep against the source, then save or republish to the same place. Report what moved, what was cut and what stayed.
+- **`/throughline hook <topic or file>`**: hooks only, without the full flow. Get the audience from the card, the file, or the designer. If you don't know their world (industry, what they care about, what they're tired of hearing), ask up to three questions first. Then follow `references/hooks.md`: one-line hooks (for slide or doc titles) and three-beat openings, scored, with bridges, then a round of picks and vetoes. Use creator-style phrasing only if the designer asks. Use a pop-culture reference only if the designer approves it and explains it or links it.
 - **`/throughline review <file>`**, **`tighten <file>`**, **`adapt <file> en|vi`**: run these directly, without the phases. If there's no audience card, ask the two questions that matter most (who decides, and what they must believe) before reviewing.
 
 ## Gates

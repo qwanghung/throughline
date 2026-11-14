@@ -27,6 +27,7 @@ Tip: paste your existing doc or link in step 1, and it fills in most of the plan
 
 ## Other commands
 
+- `/throughline hook <topic>`: just the opening. One-line hooks for your slide or doc title, plus three-beat openings, made for your audience, in the spirit of an elevator pitch or a TED-style talk
 - `/throughline review <file>`: tells you what's weak, without changing anything
 - `/throughline tighten <file>`: cuts the fluff, keeps the meaning
 - `/throughline adapt <file> vi` (or `en`): rewrites it in the other language
@@ -34,7 +35,7 @@ Tip: paste your existing doc or link in step 1, and it fills in most of the plan
 ## What's inside
 
 - `SKILL.md`: the workflow: audience → conviction → plan → write → refine
-- `references/`: audience card, the six-step outline and hooks, questions that move the needle, value-per-minute rules for cutting, rationale tables, English and Vietnamese writing patterns, formats
+- `references/`: audience card, the six-step outline, hook writing (`hooks.md`), questions that move the needle, value-per-minute rules for cutting, rationale tables, English and Vietnamese writing patterns, formats
 - `examples/`: a decision pitch (refund flow, in English and Vietnamese) and a real showcase dry run (`04-dry-run-glass-and-light.md`)
 - `INPUTS-NEEDED.md`: what's still to add (real stakeholder profiles, Vietnamese wording to check, real before/after examples)
 
@@ -43,6 +44,7 @@ Tip: paste your existing doc or link in step 1, and it fills in most of the plan
 - [Clarity](https://clarity.addy.ie/) by Addy Osmani: writing for the reader
 - [Humanizer](https://github.com/blader/humanizer) by blader: the English pattern list (MIT)
 - Wojtek Dziedzic, "Pitch perfect: how to present ideas and cut through the noise" (Config 2025): through line, hooks, three-beat structures
+- Hook craft from Rick Kettner (on Donald Miller's one-liner), Ash Maurya (the elevator pitch as a movie trailer), Kallaway and heyDominik (curiosity loops, context first, withholding the answer)
 - "The #1 Habit for Clearer Speaking (Value-Per-Minute)": value per minute, point → proof → push
 
 ## License

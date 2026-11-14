@@ -19,7 +19,7 @@ One sentence naming the outcome the decider cares about, in their terms. Write "
 
 ## Opening: hook, then point
 
-**Hook**: one sentence that states the main benefit in a fresh, slightly provocative frame. It is not a summary or an agenda.
+**Hook**: one sentence that states the main benefit in a fresh, slightly provocative frame. It is not a summary or an agenda. The full method (opening types, rules, scoring, bridges) is in `hooks.md`.
 
 - Weak: "Here's how we can redesign import."
 - Strong: "What if every new user became a regular user right after signup?"
