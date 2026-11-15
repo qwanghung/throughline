@@ -20,6 +20,24 @@ An orphan depends on line width, so you can only find one where the layout is kn
 | Figma frames with fixed-width text | Yes | Check in a screenshot. Figma's API doesn't expose line breaks, so look, then fix in the text |
 | Markdown, plain docs, README | No, the width depends on the reader | Prevent: rewrite short headings, and glue words in titles (below) |
 
+## Default for every HTML page or artifact
+
+Whenever you create or edit HTML, including an artifact, a web deck or an email, add this word-breaking baseline unless the page already has equivalent rules. Adjust the selectors to the page's own classes for titles, leads, notes and captions:
+
+```css
+/* Even line lengths: balanced titles, no lone word at the end of body text, long strings never overflow. */
+h1, h2, h3, h4, h5, h6, dt, .title, .subtitle { text-wrap: balance; }
+p, li, dd, figcaption, blockquote, summary { text-wrap: pretty; }
+body { overflow-wrap: break-word; }
+```
+
+- `balance` evens out the lines of short blocks such as titles and headings, so a heading never ends with one stranded word.
+- `pretty` adjusts the last few lines of longer text so they don't end on a single word.
+- `overflow-wrap: break-word` stops long URLs or glued runs from pushing past the edge on a phone.
+- Don't add `hyphens: auto`. Leave words whole in English and Vietnamese.
+
+Browsers that don't support `balance` or `pretty` wrap normally, so the baseline is safe everywhere. It doesn't replace checking: run the check below and glue what's left.
+
 ## How to fix, in order
 
 1. **Rewrite**, when the words are yours to change. Add, drop or swap one word so the last line fills, without changing the meaning or adding filler. Often a shorter synonym earlier in the sentence pulls the orphan up, or a more exact word at the end pushes a second word down. This is the best fix: it works at every width.
@@ -28,12 +46,7 @@ An orphan depends on line width, so you can only find one where the layout is kn
    - Vietnamese: between the syllables of the last word, and between it and the word before. "phục vụ&nbsp;người&nbsp;dùng". Keep the glued run under about 15 characters, or it can overflow on a phone.
    - Also keep together a number and its unit ("30&nbsp;phút", "12&nbsp;px"), a title and a name ("anh&nbsp;Minh"), and a closing particle with its word ("nhé", "ạ").
    - In HTML and Markdown, write `&nbsp;`. In Figma and plain text, use the character U+00A0.
-3. **Let the browser balance it** in HTML you control:
-   ```css
-   h1, h2, h3, h4, .title { text-wrap: balance; }
-   p, li, dd, figcaption, blockquote { text-wrap: pretty; }
-   ```
-   `balance` evens out heading lines, and `pretty` avoids orphans in body text. Browsers that don't support them wrap normally, so this is safe to add. It doesn't replace checking, because support varies.
+3. **Let the browser balance it**: make sure the word-breaking baseline above is on the page.
 
 Don't glue inside code, URLs, file names or anything a reader might copy.
 
